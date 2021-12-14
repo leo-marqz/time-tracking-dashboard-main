@@ -238,10 +238,13 @@ body{
 @media screen and (max-width: 1400px){
     .wrapp{
         grid-template-columns: 33% 62%;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
     .personal-information-section{
         grid-template-columns: 1fr 1fr;
     }
+    
 }
 
 @media screen and (max-width: 1090px){
@@ -252,17 +255,21 @@ body{
     .personal-information-section{
         grid-template-columns: 1fr;
     }
+    
+    .card:last-child{
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 800px){
     .container{
-        padding:0px 10px;
+        padding:0px 20px;
     }
 
     .wrapp{
         grid-template-columns: 1fr;
         gap:20px;
-        margin-top:20px;
+        margin-top:40px;
     }
     .personal-information-section{
         grid-template-columns: 1fr;
@@ -270,5 +277,71 @@ body{
 
     .profile-section{
         margin-right: 0px;
+    }
+
+    .profile-header{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        padding:20px;
+    }
+
+    .profile-header-img{
+        width:75px;
+        margin-bottom:0px;
+    }
+
+    .profile-header div{
+        display:flex;
+        flex-direction: column;
+        justify-content:start;
+    }
+
+    .profile-header-text{
+        font-size:14px;
+    }
+
+    .profile-header-username{
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+
+    .profile-body{
+        padding:20px;
+    }
+
+    .profile-body-menu{
+        display:flex;
+        justify-content:space-between;
+    }
+
+    .profile-body-item{
+        margin-bottom: 0px;
+    }
+
+    .card-body{
+        padding: 20px;
+    }
+
+    .div{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .card-body-hours{
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 0px;
+    }
+    
+    .card-body-last-week{
+        margin-top: 0px;
+        color: var(--Desaturated-blue)
+    }
+
+    .card:last-child{
+        margin-bottom: 20px;
     }
 }
